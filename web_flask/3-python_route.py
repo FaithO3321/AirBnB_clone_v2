@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def hello_hbnb():
-    """Displays 'Hello HBNB!'."""
+    """Displays text 'Hello HBNB!'."""
     return "Hello HBNB!"
 
 
@@ -27,9 +27,9 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
-    """Displays 'C' followed by the value of <text>.
+    """Displays test 'C' followed by the value of <text>.
 
-    Replaces any underscores in <text> with slashes.
+    Replaces any underscores in the <text> with slashes.
     """
     text = text.replace("_", " ")
     return "C {}".format(text)
